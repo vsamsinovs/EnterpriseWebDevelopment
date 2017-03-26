@@ -4,6 +4,8 @@ import { bindActionCreators } from 'redux';
 import { browserHistory } from 'react-router';
 import PostForm from './post.form'
 import toastr from 'toastr';
+import { Link } from 'react-router';
+
 
 import * as postActions from '../../actions/posts.actions';
 
@@ -19,6 +21,7 @@ class EditPost extends React.Component {
 		this.updatePostState = this.updatePostState.bind(this);
 		this.savePost = this.savePost.bind(this);
 		this.cancelPost = this.cancelPost.bind(this);
+		this.deletePost = this.deletePost.bind(this);
 	}
 
 	updatePostState(event) {
@@ -32,7 +35,6 @@ class EditPost extends React.Component {
 		event.preventDefault();
 		this.props.postActions.updatePost(this.state.post);
 		toastr.success("Post has been updated.");
-		browserHistory.push(`/posts/${this.state.post.id}`);		
 	}
 
 	cancelPost(event) {
@@ -40,10 +42,29 @@ class EditPost extends React.Component {
 		browserHistory.push(`/posts/${this.state.post.id}`);
 	}
 
+	deletePost(event) {
+		event.preventDefault();
+
+		if (confirm("Are you sure you want to permanently delete selected item?")) {
+			this.props.postActions.deletePost(this.state.post.id);
+			toastr.error("Post has been successfully deleted.");
+		}
+	}
+
 	render() {
 		return (
 			<div>
-				<h1>Edit Post</h1>
+				<h1>
+					<div className="col-md-10 no-padding">
+						Edit Post
+					</div>
+					<div className="col-md-2 no-padding">
+						<button type="button" className="btn btn-danger" onClick={this.deletePost}>
+							<i className="glyphicon glyphicon-remove"></i>
+							Delete
+						</button>
+					</div>
+				</h1>
 				<PostForm
 					post={this.props.post}
 					onSave={this.savePost}

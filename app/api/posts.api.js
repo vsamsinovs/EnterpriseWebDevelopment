@@ -42,6 +42,20 @@ class PostsApi {
 		});
 	}
 
+
+	static deletePost(postId) {
+		const request = new Request(`http://localhost:3000/posts/${postId}`, {
+			method: 'DELETE',
+			headers: new Headers({
+				'Content-Type': 'application/json'
+			})
+		});
+		return fetch(request).then(response => {
+			return response.json();
+		}).catch(error => {
+			return error;
+		});
+	}
 }
 
 export default PostsApi;

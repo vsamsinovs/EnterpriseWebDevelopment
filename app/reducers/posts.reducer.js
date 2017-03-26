@@ -12,6 +12,7 @@ export default function postsReducer(state = initialState.posts, action) {
                 return -post.upvotes
             });
         case types.UPDATE_POST_SUCCESS:
+            browserHistory.push(`/posts/${action.post.id}`);
             posts = [
                 ...state.filter(post => post.id !== action.post.id),
                 Object.assign({}, action.post)
@@ -23,6 +24,15 @@ export default function postsReducer(state = initialState.posts, action) {
             browserHistory.push(`/posts/${action.post.id}`);
             posts = [
                 ...state.filter(post => post.id !== action.post.id), Object.assign({}, action.post)
+            ];
+            return _.sortBy(posts, post => {
+                return -post.upvotes
+            });
+        case types.DELETE_POST_SUCCESS:
+            browserHistory.push(`/posts/`);
+            console.log(action);
+            posts = [
+                ...state.filter(post => post.id !== action.postId)
             ];
             return _.sortBy(posts, post => {
                 return -post.upvotes

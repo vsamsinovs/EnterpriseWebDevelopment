@@ -30,9 +30,9 @@ class PostEdit extends React.Component {
 						<button
 							type="button"
 							disabled={this.props.saving}
-							className="btn btn-danger"
+							className="btn btn-warning"
 							onClick={this.props.onCancel} >
-							<i className="glyphicon glyphicon-remove"></i>
+							<i className="glyphicon glyphicon-chevron-left"></i>
 							Cancel
 						</button>
 					</div>

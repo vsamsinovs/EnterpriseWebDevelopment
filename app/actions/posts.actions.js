@@ -33,6 +33,16 @@ export function createPost(post) {
 	}
 }
 
+export function deletePost(postId) {
+	return function (dispatch) {
+		return postsApi.deletePost(postId).then(response => {
+			dispatch(deletePostSuccess(postId));
+		}).catch(error => {
+			throw (error);
+		});
+	}
+}
+
 function loadPostsSuccess(posts) {
 	return { type: types.LOAD_POSTS_SUCCESS, posts };
 }
@@ -43,4 +53,8 @@ function updatePostSuccess(post){
 
 function createPostSuccess(post){
 	return { type: types.CREATE_POST_SUCCESS, post }
+}
+
+function deletePostSuccess(postId){
+	return { type: types.DELETE_POST_SUCCESS, postId }
 }
