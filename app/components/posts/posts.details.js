@@ -45,7 +45,6 @@ class PostPage extends React.Component {
 		return (
 			<article className="post">
 				<section>
-
 					<PostContent post={this.props.post} />
 
 					<Link to={`/posts/edit/${this.props.post.id}`} className="btn btn-primary" activeClassName="active">

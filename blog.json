@@ -14,14 +14,14 @@
       "date": "25th february 2017 1",
       "heading": "This is a first post 2",
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien,molestie quis elementum et, dim non atino ipsum.  \n Fusce non ante sed lorem rutrum feugiat.Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.",
-      "upvotes": 2
+      "upvotes": 18
     },
     {
       "id": 3,
-      "author": "Vadims Samsinovs",
+      "author": "Vadims Samsinovs 1 2",
       "date": "25th february 2017",
-      "heading": "This is a first post 1",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien,molestie quis elementum et, dim non atino ipsum.  \n Fusce non ante sed lorem rutrum feugiat.Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.",
+      "heading": "This is a first post 1 1 2",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien,molestie quis elementum et, dim non atino ipsum.  \n Fusce non ante sed lorem rutrum feugiat.Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat. 1 2",
       "upvotes": 30
     },
     {
@@ -61,7 +61,87 @@
       "author": "asd",
       "date": "26/03/2017",
       "heading": "asd2 2",
-      "content": "ad"
+      "content": "ad",
+      "upvotes": 6
+    },
+    {
+      "id": 9,
+      "author": "asd 1223",
+      "date": "26/03/2017",
+      "heading": "asd 1223",
+      "content": "asd 1223",
+      "upvotes": 3
+    },
+    {
+      "id": 10,
+      "author": "hi",
+      "date": "26/03/2017",
+      "heading": "hi",
+      "content": "hi",
+      "upvotes": 2
+    },
+    {
+      "id": 11,
+      "author": "asd3",
+      "date": "26/03/2017",
+      "heading": "ad3",
+      "content": "asd3"
+    },
+    {
+      "id": 12,
+      "author": "asd4123",
+      "date": "26/03/2017",
+      "heading": "asd4a123",
+      "content": "asd4123",
+      "upvotes": 5
+    },
+    {
+      "id": 13,
+      "author": "asd51",
+      "date": "26/03/2017",
+      "heading": "asd51",
+      "content": "asd51",
+      "upvotes": 7
+    },
+    {
+      "id": 14,
+      "author": "asd65",
+      "date": "26/03/2017",
+      "heading": "asd65",
+      "content": "asd65",
+      "upvotes": 2
+    },
+    {
+      "id": 15,
+      "author": "hi1",
+      "date": "26/03/2017",
+      "heading": "hi1",
+      "content": "hi1",
+      "upvotes": 2
+    },
+    {
+      "id": 16,
+      "author": "hi",
+      "date": "26/03/2017",
+      "heading": "hi",
+      "content": "hi",
+      "upvotes": 1
+    },
+    {
+      "id": 17,
+      "author": "hi12",
+      "date": "26/03/2017",
+      "heading": "hi12",
+      "content": "hi12",
+      "upvotes": 1
+    },
+    {
+      "id": 18,
+      "author": "re1",
+      "date": "26/03/2017",
+      "heading": "re1",
+      "content": "re1",
+      "upvotes": 1
     }
   ],
   "comments": [
@@ -286,6 +366,48 @@
       "id": 32,
       "postId": "1",
       "content": "Hello World",
+      "date": "26/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 33,
+      "content": "asd",
+      "date": "26/03/2017",
+      "author": "Anonymous",
+      "postId": "undefined"
+    },
+    {
+      "id": 34,
+      "content": "asd65",
+      "date": "26/03/2017",
+      "author": "Anonymous",
+      "postId": "undefined"
+    },
+    {
+      "id": 35,
+      "postId": "14",
+      "content": "asd65",
+      "date": "26/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 36,
+      "postId": "9",
+      "content": "asd",
+      "date": "26/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 37,
+      "postId": "9",
+      "content": "asd2",
+      "date": "26/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 38,
+      "postId": "9",
+      "content": "asd23",
       "date": "26/03/2017",
       "author": "Anonymous"
     }

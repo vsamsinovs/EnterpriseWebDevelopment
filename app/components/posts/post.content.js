@@ -18,12 +18,12 @@ class PostContent extends React.Component {
 	upVote(event) {
 		event.preventDefault();
 
-		const post = this.state.post;
+		const post = this.props.post;
 		post.upvotes = (post.upvotes ? parseInt(post.upvotes) : 0) + 1;
 
 		this.setState({ post: post });
 
-		this.props.postActions.updatePost(this.state.post);
+		this.props.postActions.updatePost(this.props.post);
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -37,19 +37,19 @@ class PostContent extends React.Component {
 			<div>
 				<header>
 					<h1>
-						{this.state.post.heading}
+						{this.props.post.heading}
 						<a href="" className="thumb pull-right" title="Upvote" onClick={this.upVote}>
-							{this.state.post.upvotes || 0}
+							{this.props.post.upvotes || 0}
 							<i className="glyphicon glyphicon-thumbs-up"></i>
 						</a>
 					</h1>
-					<p>By: {this.state.post.author}, {this.state.post.date}</p>
+					<p>By: {this.props.post.author}, {this.props.post.date}</p>
 				</header>
 
 				<hr />
 
 				<main>
-					<p>{this.state.post.content}</p>
+					<p>{this.props.post.content}</p>
 				</main>
 			</div>
 		)

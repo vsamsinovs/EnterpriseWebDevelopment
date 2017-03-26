@@ -76,7 +76,6 @@ class CreateComment extends React.Component {
 }
 
 CreateComment.propTypes = {
-	postId: PropTypes.number.isRequired,
 	commentActions: PropTypes.object.isRequired
 }
 
