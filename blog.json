@@ -1,0 +1,293 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "author": "Vadims Samsinovs",
+      "date": "25th february 2017",
+      "heading": "This is a first post 3",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien,molestie quis elementum et, dim non atino ipsum.   Fusce non ante sed lorem rutrum feugiat.Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat. this is just some extra text",
+      "upvotes": 29
+    },
+    {
+      "id": 2,
+      "author": "Vadims Samsinovs 2",
+      "date": "25th february 2017 1",
+      "heading": "This is a first post 2",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien,molestie quis elementum et, dim non atino ipsum.  \n Fusce non ante sed lorem rutrum feugiat.Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.",
+      "upvotes": 2
+    },
+    {
+      "id": 3,
+      "author": "Vadims Samsinovs",
+      "date": "25th february 2017",
+      "heading": "This is a first post 1",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien,molestie quis elementum et, dim non atino ipsum.  \n Fusce non ante sed lorem rutrum feugiat.Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.",
+      "upvotes": 30
+    },
+    {
+      "id": 4,
+      "author": "asd",
+      "date": "asd",
+      "heading": "asd",
+      "content": "ad",
+      "upvotes": 1
+    },
+    {
+      "id": 5,
+      "author": "asd2",
+      "date": "asd2",
+      "heading": "asd2 23",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien,molestie quis elementum et, dim non atino ipsum. Fusce non ante sed lorem rutrum feugiat.Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.",
+      "upvotes": 1
+    },
+    {
+      "id": 6,
+      "author": "asd",
+      "date": "asd 2",
+      "heading": "asd",
+      "content": "browserHistory.push(`/posts/${action.post.id}`);",
+      "upvotes": 12
+    },
+    {
+      "id": 7,
+      "author": "asd",
+      "date": "",
+      "heading": "asd",
+      "content": "asd",
+      "upvotes": 1
+    },
+    {
+      "id": 8,
+      "author": "asd",
+      "date": "26/03/2017",
+      "heading": "asd2 2",
+      "content": "ad"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "author": "Vadims Samsinovs",
+      "date": "25th february 2017",
+      "content": "Great post! Keep at it!"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "author": "Vadims Samsinovs",
+      "date": "26th february 2017",
+      "content": "Keep at it bro!"
+    },
+    {
+      "postId": "1",
+      "content": "asd",
+      "date": "",
+      "author": "Anonymous",
+      "id": 3
+    },
+    {
+      "postId": "1",
+      "content": "hi",
+      "date": "",
+      "author": "Anonymous",
+      "id": 4
+    },
+    {
+      "postId": "1",
+      "content": "What a great post",
+      "date": "",
+      "author": "Anonymous",
+      "id": 5
+    },
+    {
+      "postId": "1",
+      "content": "Another amaizing post",
+      "date": "",
+      "author": "Anonymous",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "postId": "1",
+      "content": "You are great!",
+      "date": "",
+      "author": "Anonymous"
+    },
+    {
+      "id": 8,
+      "postId": "1",
+      "content": "asd",
+      "date": "",
+      "author": "Anonymous"
+    },
+    {
+      "id": 9,
+      "postId": "1",
+      "content": "asd",
+      "date": "",
+      "author": "Anonymous"
+    },
+    {
+      "id": 10,
+      "postId": "1",
+      "content": "asd",
+      "date": "",
+      "author": "Anonymous"
+    },
+    {
+      "id": 11,
+      "postId": "1",
+      "content": "hello",
+      "date": "",
+      "author": "Anonymous"
+    },
+    {
+      "id": 12,
+      "postId": "1",
+      "content": "asdre",
+      "date": "",
+      "author": "Anonymous"
+    },
+    {
+      "id": 13,
+      "postId": "1",
+      "content": "Hello World",
+      "date": "",
+      "author": "Anonymous"
+    },
+    {
+      "id": 14,
+      "postId": "1",
+      "content": "asd",
+      "date": "2017-03-25T18:04:34.558Z",
+      "author": "Anonymous"
+    },
+    {
+      "id": 15,
+      "postId": "1",
+      "content": "asd",
+      "date": "3/25/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 16,
+      "postId": "1",
+      "content": "asd",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 17,
+      "postId": "1",
+      "content": "asd",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 18,
+      "postId": "1",
+      "content": "Hello World",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 19,
+      "postId": "1",
+      "content": "asd",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 20,
+      "postId": "1",
+      "content": "asd",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 21,
+      "postId": "1",
+      "content": "re",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 22,
+      "postId": "1",
+      "content": "What the hell?",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 23,
+      "postId": "1",
+      "content": "This is working now?",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 24,
+      "postId": "1",
+      "content": "asd",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 25,
+      "postId": "1",
+      "content": "asd 2",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 26,
+      "postId": "1",
+      "content": "asd",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 27,
+      "postId": "1",
+      "content": "Hellow",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 28,
+      "postId": "1",
+      "content": "asd",
+      "date": "25/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 29,
+      "postId": "1",
+      "content": "Hello World\n",
+      "date": "26/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 30,
+      "postId": "1",
+      "content": "Hello World",
+      "date": "26/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 31,
+      "postId": "1",
+      "content": "hello world",
+      "date": "26/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 32,
+      "postId": "1",
+      "content": "Hello World",
+      "date": "26/03/2017",
+      "author": "Anonymous"
+    }
+  ]
+}
