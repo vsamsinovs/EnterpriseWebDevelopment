@@ -27,7 +27,7 @@ class PostContent extends React.Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-		if (this.props.post.id != nextProps.post.id) {
+		if (this.props.post._id != nextProps.post._id) {
 			this.setState({ post: nextProps.post });
 		}
 	}

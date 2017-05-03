@@ -19,6 +19,7 @@ import './style/main.less';
 import './style/buttons.less';
 import './style/form.less';
 import './style/blog.less';
+
 import toastr from 'toastr';
 
 toastr.options = {

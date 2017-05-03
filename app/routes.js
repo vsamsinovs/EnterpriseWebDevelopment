@@ -14,8 +14,8 @@ export default (
 		<Route path="/posts" component={PostsPage} >
 		
 			<Route path="/posts/create" component={PostCreatePage} />
-			<Route path="/posts/:id" component={PostPage} />
-			<Route path="/posts/edit/:id" component={PostEditPage} />
+			<Route path="/posts/:_id" component={PostPage} />
+			<Route path="/posts/edit/:_id" component={PostEditPage} />
 		</Route>
 		<Route path="/comments" component={Comments} />
 	</Route>

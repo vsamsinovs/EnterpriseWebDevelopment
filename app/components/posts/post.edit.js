@@ -39,14 +39,14 @@ class EditPost extends React.Component {
 
 	cancelPost(event) {
 		event.preventDefault();
-		browserHistory.push(`/posts/${this.state.post.id}`);
+		browserHistory.push(`/posts/${this.state.post._id}`);
 	}
 
 	deletePost(event) {
 		event.preventDefault();
 
 		if (confirm("Are you sure you want to permanently delete selected item?")) {
-			this.props.postActions.deletePost(this.state.post.id);
+			this.props.postActions.deletePost(this.state.post._id);
 			toastr.error("Post has been successfully deleted.");
 		}
 	}
@@ -82,11 +82,10 @@ EditPost.propTypes = {
 };
 
 function mapStateToProps(state, ownProps) {
-	let post = { id: 0, author: '', date: '', heading: '', content: '', upvotes: 0 };
-	const postId = ownProps.params.id;
-
+	let post = { _id: 0, author: '', date: '', heading: '', content: '', upvotes: 0 };
+	const postId = ownProps.params._id;
 	if (state.posts.length > 0) {
-		post = Object.assign({}, state.posts.find(post => post.id == postId));
+		post = Object.assign({}, state.posts.find(post => post._id == postId));
 	}
 
 	return {

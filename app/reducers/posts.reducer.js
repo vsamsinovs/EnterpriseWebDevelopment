@@ -12,7 +12,7 @@ export default function postsReducer(state = initialState.posts, action) {
                 return -post.upvotes
             });
         case types.UPDATE_POST_SUCCESS:
-            browserHistory.push(`/posts/${action.post.id}`);
+            browserHistory.push(`/posts/${action.post._id}`);
             posts = [
                 ...state.filter(post => post.id !== action.post.id),
                 Object.assign({}, action.post)
@@ -21,7 +21,7 @@ export default function postsReducer(state = initialState.posts, action) {
                 return -post.upvotes
             });
         case types.CREATE_POST_SUCCESS:
-            browserHistory.push(`/posts/${action.post.id}`);
+            browserHistory.push(`/posts/${action.post._id}`);
             posts = [
                 ...state.filter(post => post.id !== action.post.id), Object.assign({}, action.post)
             ];

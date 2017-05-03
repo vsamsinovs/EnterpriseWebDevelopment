@@ -25,7 +25,7 @@ class PostPage extends React.Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-		if (this.props.post.id != nextProps.post.id) {
+		if (this.props.post._id!= nextProps.post._id) {
 			this.setState({ post: nextProps.post });
 		}
 	}
@@ -47,15 +47,15 @@ class PostPage extends React.Component {
 				<section>
 					<PostContent post={this.props.post} />
 
-					<Link to={`/posts/edit/${this.props.post.id}`} className="btn btn-primary" activeClassName="active">
+					<Link to={`/posts/edit/${this.props.post._id}`} className="btn btn-primary" activeClassName="active">
 						<i className="glyphicon glyphicon-edit"></i>
 						Edit Post
 						</Link>
 
 					<footer>
-						<CommentCreate postId={this.props.post.id} />
+						<CommentCreate postId={this.props.post._id} />
 						<hr />
-						<CommentsList postId={this.props.post.id} />
+						<CommentsList postId={this.props.post._id} />
 					</footer>
 
 				</section>
@@ -71,10 +71,10 @@ PostPage.propTypes = {
 
 function mapStateToProps(state, ownProps) {
 	let post = { id: 0, author: '', date: '', heading: '', content: '', upvotes: 0 };
-	const postId = ownProps.params.id;
-
+	const postId = ownProps.params._id;
+	
 	if (state.posts.length > 0) {
-		post = Object.assign({}, state.posts.find(post => post.id == postId));
+		post = Object.assign({}, state.posts.find(post => post._id == postId));
 	}
 
 	return {

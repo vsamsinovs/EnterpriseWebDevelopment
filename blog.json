@@ -6,15 +6,18 @@
       "date": "25th february 2017",
       "heading": "Hello World",
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien,molestie quis elementum et, dim non atino ipsum.   Fusce non ante sed lorem rutrum feugiat.Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat. this is just some extra text",
-      "upvotes": 29
+      "upvotes": 34
     },
     {
+      "_id": "5908ec82e55c185a386a9232",
       "id": 2,
-      "author": "Vadims Samsinovs ",
-      "date": "25th february 2017 1",
-      "heading": "This is a third post",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien,molestie quis elementum et, dim non atino ipsum.  \n Fusce non ante sed lorem rutrum feugiat.Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.",
-      "upvotes": 19
+      "title": "The button that is not.",
+      "link": "http://blog.nuclearsecrecy.com/2014/12/15/button-isnt/",
+      "author": "notme",
+      "comments": [],
+      "date": "23th february 2017",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien,molestie quis elementum et, dim non atino ipsum.   Fusce non ante sed lorem rutrum feugiat.Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat. this is just some extra text",
+      "upvotes": 14
     },
     {
       "id": 3,
@@ -22,7 +25,7 @@
       "date": "25th february 2017",
       "heading": "This is a first post",
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien,molestie quis elementum et, dim non atino ipsum.  \n Fusce non ante sed lorem rutrum feugiat.Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus, ut consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.",
-      "upvotes": 30
+      "upvotes": 31
     }
   ],
   "comments": [
@@ -248,6 +251,41 @@
       "postId": "1",
       "content": "Hello World",
       "date": "26/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 33,
+      "postId": "3",
+      "content": "What a great post!",
+      "date": "29/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 34,
+      "postId": "1",
+      "content": "what a great post 2",
+      "date": "29/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 35,
+      "postId": "3",
+      "content": "Hello World 3",
+      "date": "29/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 36,
+      "postId": "2",
+      "content": "Hello world",
+      "date": "30/03/2017",
+      "author": "Anonymous"
+    },
+    {
+      "id": 37,
+      "postId": "5908f203e6afe818b46c9691",
+      "content": "\\zx",
+      "date": "03/05/2017",
       "author": "Anonymous"
     }
   ]

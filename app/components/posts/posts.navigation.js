@@ -37,8 +37,8 @@ class PostsNavigation extends React.Component {
 				</li>
 				{filteredPosts.map(post =>
 
-					<li className="list-group-item" key={post.id}>
-						<Link to={"/posts/" + post.id} activeClassName="active">
+					<li className="list-group-item" key={post._id}>
+						<Link to={"/posts/" + post._id} activeClassName="active">
 							{post.upvotes || 0}<i className="glyphicon glyphicon-thumbs-up"></i>
 							{post.heading}</Link>
 					</li>

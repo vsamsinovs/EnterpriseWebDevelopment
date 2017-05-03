@@ -2,7 +2,7 @@ class PostsApi {
 
 	static getAllPosts() {
 
-		return fetch('http://localhost:3000/posts/').then(response => {
+		return fetch('http://localhost:8080/api/posts/').then(response => {
 			return response.json();
 		}).catch(error => {
 			return error;
@@ -11,7 +11,7 @@ class PostsApi {
 	}
 
 	static updatePost(post) {
-		const request = new Request(`http://localhost:3000/posts/${post.id}`, {
+		const request = new Request(`http://localhost:8080/api/posts/${post._id}`, {
 			method: 'PUT',
 			headers: new Headers({
 				'Content-Type': 'application/json'
@@ -27,7 +27,7 @@ class PostsApi {
 	}
 
 	static createPost(post) {
-		const request = new Request(`http://localhost:3000/posts/`, {
+		const request = new Request(`http://localhost:8080/api/posts/`, {
 			method: 'POST',
 			headers: new Headers({
 				'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ class PostsApi {
 
 
 	static deletePost(postId) {
-		const request = new Request(`http://localhost:3000/posts/${postId}`, {
+		const request = new Request(`http://localhost:8080/api/posts/${postId}`, {
 			method: 'DELETE',
 			headers: new Headers({
 				'Content-Type': 'application/json'

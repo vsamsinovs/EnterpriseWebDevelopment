@@ -13,11 +13,11 @@ class PostList extends React.Component {
 	render() {
 
 		const render = this.props.posts.map(post => {
-			return <article className="post" key={post.id}>
+			return <article className="post" key={post._id}>	
 				<section>
 					<PostContent post={post}/>
 
-					<Link to={`/posts/${post.id}`} className="btn btn-default" activeClassName="active">
+					<Link to={`/posts/${post._id}`} className="btn btn-default" activeClassName="active">
 						Read More
 					</Link>
 				</section>

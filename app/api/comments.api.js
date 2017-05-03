@@ -1,7 +1,6 @@
 class CommentsApi {  
 
 	static getAll(postId) {
-		console.log("get all posts = " + postId);
 		return fetch(`http://localhost:3000/posts/${postId}/comments`).then(response => {
 			return response.json();
 		}).catch(error => {
