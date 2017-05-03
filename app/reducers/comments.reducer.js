@@ -7,9 +7,8 @@ export default function commentsReducer(state = initialState.comments, action) {
 		case types.LOAD_COMMENTS_SUCCESS:
 			return action.comments
 		case types.CREATE_COMMENT_SUCCESS:
-		console.log(action, action.comment);
 			return [
-				...state.filter(c => c.id !== action.comment.id),
+				...state.filter(c => c._id !== action.comment._id),
 				Object.assign({}, action.comment)
 			];
 		default:

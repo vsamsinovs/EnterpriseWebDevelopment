@@ -14,25 +14,25 @@ export default function postsReducer(state = initialState.posts, action) {
         case types.UPDATE_POST_SUCCESS:
             browserHistory.push(`/posts/${action.post._id}`);
             posts = [
-                ...state.filter(post => post.id !== action.post.id),
+                ...state.filter(post => post._id !== action.post._id),
                 Object.assign({}, action.post)
             ];
             return _.sortBy(posts, post => {
                 return -post.upvotes
             });
         case types.CREATE_POST_SUCCESS:
+
             browserHistory.push(`/posts/${action.post._id}`);
             posts = [
-                ...state.filter(post => post.id !== action.post.id), Object.assign({}, action.post)
+                ...state.filter(post => post._id !== action.post._id), Object.assign({}, action.post)
             ];
             return _.sortBy(posts, post => {
                 return -post.upvotes
             });
         case types.DELETE_POST_SUCCESS:
             browserHistory.push(`/posts/`);
-            console.log(action);
             posts = [
-                ...state.filter(post => post.id !== action.postId)
+                ...state.filter(post => post._id !== action.postId)
             ];
             return _.sortBy(posts, post => {
                 return -post.upvotes

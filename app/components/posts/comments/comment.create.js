@@ -10,11 +10,10 @@ import toastr from 'toastr';
 import * as commentActions from '../../../actions/comments.actions';
 
 const getInitialComment = (postId) => {
+	console.log(postId);
 	return {
-		id: 0,
 		postId: postId,
 		content: "",
-		date: Today(),
 		author: "Anonymous"
 	}
 }

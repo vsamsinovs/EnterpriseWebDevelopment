@@ -12,6 +12,7 @@ class CommentsList extends React.Component {
 		super(props);
 
 		this.state = {
+			_id: "",
 			comments: this.props.comments,
 			postId: this.props.postId
 		}
@@ -35,7 +36,7 @@ class CommentsList extends React.Component {
 
 	render() {
 		let comments = this.state.comments.map((comment) =>
-			<div className="media" key={comment.id}>
+			<div className="media" key={comment._id}>
 				<a className="pull-left" href="#">
 					<img className="media-object" src="http://placehold.it/64x64" alt="" />
 				</a>

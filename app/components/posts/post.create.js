@@ -60,7 +60,7 @@ CreatePost.propTypes = {
 
 function mapStateToProps(state, ownProps) {
 	return {
-		post: { _id: 0, author: '', date: Today(), heading: '', content: '' }
+		post: { author: '', date: Today(), heading: '', content: '' }
 	};
 }
 

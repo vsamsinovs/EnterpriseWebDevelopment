@@ -1,16 +1,7 @@
-class CommentsApi {  
+class CommentsApi {
 
 	static getAll(postId) {
-		return fetch(`http://localhost:3000/posts/${postId}/comments`).then(response => {
-			return response.json();
-		}).catch(error => {
-			return error;
-		});
-
-	}
-
-	static getAll(postId) {
-		return fetch(`http://localhost:3000/posts/${postId}/comments`).then(response => {
+		return fetch(`http://localhost:8080/api/posts/${postId}/comments`).then(response => {
 			return response.json();
 		}).catch(error => {
 			return error;
@@ -19,7 +10,7 @@ class CommentsApi {
 	}
 
 	static createComment(comment) {
-		const request = new Request(`http://localhost:3000/posts/${comment.postId}/comments`, {
+		const request = new Request(`http://localhost:8080/api/posts/${comment.postId}/comments`, {
 			method: 'POST',
 			headers: new Headers({
 				'Content-Type': 'application/json'
