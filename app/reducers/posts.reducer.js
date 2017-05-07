@@ -21,7 +21,6 @@ export default function postsReducer(state = initialState.posts, action) {
         return -post.upvotes
       });
     case types.CREATE_POST_SUCCESS:
-
       browserHistory.push(`/posts/${action.post._id}`);
       posts = [
         ...state.filter(post => post._id !== action.post._id), Object.assign({}, action.post)

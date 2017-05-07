@@ -1,0 +1,8 @@
+---
+applications:
+- name: vs-enterpriseweb-app
+  host: vs-enterpriseweb-app
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  command: npm run startserver
+  memory:  384M
+  timeout: 180

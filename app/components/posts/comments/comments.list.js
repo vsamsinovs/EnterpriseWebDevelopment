@@ -13,7 +13,7 @@ class CommentsList extends React.Component {
 
 		this.state = {
 			_id: "",
-			comments: this.props.comments,
+			comments: this.props.comments || [],
 			postId: this.props.postId
 		}
 	}
@@ -35,20 +35,23 @@ class CommentsList extends React.Component {
 	}
 
 	render() {
-		let comments = this.state.comments.map((comment) =>
-			<div className="media" key={comment._id}>
-				<a className="pull-left" href="#">
-					<img className="media-object" src="http://placehold.it/64x64" alt="" />
-				</a>
-				<div className="media-body">
-					<h4 className="media-heading">{comment.author}
-						<small> {comment.date}</small>
-					</h4>
-					{comment.content}
-				</div>
-			</div>
-		);
+		let comments = [];
 
+		if (this.state.comments.length) {
+			comments = this.state.comments.map((comment) =>
+				<div className="media" key={comment._id}>
+					<a className="pull-left" href="#">
+						<img className="media-object" src="http://placehold.it/64x64" alt="" />
+					</a>
+					<div className="media-body">
+						<h4 className="media-heading">{comment.author}
+							<small> {comment.date}</small>
+						</h4>
+						{comment.content}
+					</div>
+				</div>
+			);
+		}
 		let commentsRender = comments.length ? comments : <p>Be the first to leave a comment</p>;
 
 		return (

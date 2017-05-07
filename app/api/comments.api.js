@@ -1,7 +1,7 @@
 class CommentsApi {
 
 	static getAll(postId) {
-		return fetch(`http://localhost:8080/api/posts/${postId}/comments`).then(response => {
+		return fetch(`https://vs-enterpriseweb-api.eu-gb.mybluemix.net/api/posts/${postId}/comments`).then(response => {
 			return response.json();
 		}).catch(error => {
 			return error;
@@ -10,7 +10,7 @@ class CommentsApi {
 	}
 
 	static createComment(comment) {
-		const request = new Request(`http://localhost:8080/api/posts/${comment.postId}/comments`, {
+		const request = new Request(`https://vs-enterpriseweb-api.eu-gb.mybluemix.net/api/posts/${comment.postId}/comments`, {
 			method: 'POST',
 			headers: new Headers({
 				'Content-Type': 'application/json'

@@ -1,10 +1,11 @@
+
 var config = {
   entry: "./index.js",
 
   output: {
     path: __dirname,
     filename: "bundle.js",
-    publicPath: "/dist/"
+    publicPath: "/src/"
   },
 
   module: {

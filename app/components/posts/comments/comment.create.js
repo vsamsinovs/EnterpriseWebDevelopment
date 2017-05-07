@@ -10,10 +10,9 @@ import toastr from 'toastr';
 import * as commentActions from '../../../actions/comments.actions';
 
 const getInitialComment = (postId) => {
-	console.log(postId);
 	return {
 		postId: postId,
-		content: "",
+		content: " ",
 		author: "Anonymous"
 	}
 }
@@ -30,6 +29,12 @@ class CreateComment extends React.Component {
 		this.saveComment = this.saveComment.bind(this);
 		this.updateCommentState = this.updateCommentState.bind(this);
 		this.reset = this.reset.bind(this);
+	}
+
+	componentWillReceiveProps(nextProps) {
+		if (this.props.postId != nextProps.postId) {
+			this.setState({ comment: getInitialComment(nextProps.postId) });
+		}
 	}
 
 	saveComment(event) {

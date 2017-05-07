@@ -70,7 +70,7 @@ PostPage.propTypes = {
 };
 
 function mapStateToProps(state, ownProps) {
-	let post = { id: 0, author: '', date: '', heading: '', content: '', upvotes: 0 };
+	let post = { _id: '', author: '', date: '', heading: '', content: '', upvotes: 0 };
 	const postId = ownProps.params._id;
 	
 	if (state.posts.length > 0) {
